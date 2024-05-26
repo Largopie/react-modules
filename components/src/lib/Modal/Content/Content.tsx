@@ -9,7 +9,7 @@ interface ContentProps {
 
 export default function Content({ size, children }: PropsWithChildren<ContentProps>) {
   return (
-    <div style={{ width: `${typeof size === 'number' && size}px` }} className={`content ${typeof size === 'string' && styles[size]}`}>
+    <div style={typeof size === 'number' ? { width: `${size}px` } : {}} className={`content ${typeof size === 'string' ? styles[size] : ''}`}>
       {children}
     </div>
   );

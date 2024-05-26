@@ -40,7 +40,7 @@ function App() {
 
       <Modal position='center' isOpen={isModalOpen} onClose={onModalClose}>
         <Modal.Backdrop onClick={onModalClose} />
-        <Modal.Content size='medium'>
+        <Modal.Content size={382}>
           <Modal.Header>
             <Modal.Title>제목</Modal.Title>
             <Modal.CloseButton onClick={onModalClose} />

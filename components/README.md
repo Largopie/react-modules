@@ -56,9 +56,9 @@ npm install nakta-react-payments-components
 
 **Props**
 
-| prop | description                                                                               | defaultValue |
-| ---- | ----------------------------------------------------------------------------------------- | ------------ |
-| size | `small`, `medium`, `large`를 선택적으로 입력받아 모달 컨텐츠의 크기를 설정할 수 있습니다. | medium       |
+| prop | description                                                                                            | defaultValue |
+| ---- | ------------------------------------------------------------------------------------------------------ | ------------ |
+| size | `small`, `medium`, `large`, `숫자 타입`을 선택적으로 입력받아 모달 컨텐츠의 크기를 설정할 수 있습니다. | medium       |
 
 **size**
 
@@ -67,12 +67,18 @@ npm install nakta-react-payments-components
 | small  | 320 |
 | medium | 480 |
 | large  | 600 |
+| 382    | 382 |
+| 400    | 400 |
 
 **Content example**
 
 ```tsx
 <Modal>
   <Modal.Content size='medium'>...</Modal.Content>
+</Modal>
+
+<Modal>
+  <Modal.Content size={382}>...</Modal.Content>
 </Modal>
 ```
 
